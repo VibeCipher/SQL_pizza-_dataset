@@ -1,14 +1,4 @@
-# SQL_pizza-_dataset
 This repository contains an end-to-end SQL project focused on analyzing pizza sales data. The project demonstrates how to create an SQL database, import data, and perform various data analysis tasks using SQL queries.
-
-## Table of Contents
-- [Project Description](#project-description)
-- [Data Sources](#data-sources)
-- [Setup Instructions](#setup-instructions)
-- [SQL Queries](#sql-queries)
-- [Key Features](#key-features)
-- [Contributing](#contributing)
-
 ## Project Description
 The goal of this project is to showcase SQL skills by analyzing a dataset related to pizza sales. The project covers:
 - Creating a database
@@ -32,12 +22,11 @@ To set up the project locally, follow these steps:
    ```bash
    git clone https://github.com/yourusername/pizza-sales-sql.git
    cd pizza-sales-sql
-
 Install MySQL: Ensure you have MySQL installed on your machine. You can download it from MySQL's official website.
 Create a Database: Open MySQL Workbench or your preferred SQL client and run the following command to create a new database:
-sql
+```sql
 CREATE DATABASE pizza_sales;
-
+```
 Import Data: Use the MySQL Workbench Data Import Wizard to import the CSV files into the corresponding tables in your database.
 SQL Queries
 The project includes several SQL queries that perform various analyses, including:
@@ -48,7 +37,7 @@ Analyzing order distribution by hour of the day
 Example Queries
 Here are a few example queries from the project:
 Total Number of Orders:
-sql
+```sql
 SELECT COUNT(order_id) AS total_orders FROM orders;
 
 Total Revenue:
@@ -66,9 +55,44 @@ JOIN pizza_types pt ON p.pizza_type_id = pt.pizza_type_id
 GROUP BY pt.name
 ORDER BY total_quantity DESC
 LIMIT 5;
-
+```
 Key Features
 Comprehensive SQL project covering basic to advanced queries.
 Practical examples of data analysis using SQL.
 Ability to showcase SQL skills through a real-world dataset.
-Contributing
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
